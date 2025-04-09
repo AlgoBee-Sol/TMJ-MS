@@ -1,16 +1,27 @@
+// app/page.tsx
 import Link from "next/link";
+import Navbar from "@/app/components/landing/Navbar";
+import Hero from "@/app/components/landing/Hero";
+import Features from "@/app/components/landing/Features";
+import Services from "@/app/components/landing/Services";
+import Testimonials from "@/app/components/landing/Testimonials";
+import CTASection from "@/app/components/landing/CTASection";
+import Footer from "@/app/components/landing/Footer";
+import ImageShowcase from "./components/landing/ImageShowcaseHero";
 
-export default function Home() {
+export default function LandingPage() {
   return (
-    <div className="h-screen flex flex-col justify-center items-center">
-      <h1>Home Page / Landing Page</h1>
-      <br />
-      <Link
-        className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-        href="/login"
-      >
-        Login
-      </Link>
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <Navbar />
+      <Hero />
+      <div className="hidden sm:block bg-[#e0e7ff]">
+        <ImageShowcase />
+      </div>
+      <Features />
+      <Services />
+      <Testimonials />
+      <CTASection />
+      <Footer />
     </div>
   );
 }

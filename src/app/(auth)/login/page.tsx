@@ -11,7 +11,9 @@ export default function LoginPage() {
 
   return (
     <div className="w-full max-w-sm space-y-4">
-      <h2 className="text-2xl font-semibold mb-2">Login</h2>
+      <h2 className="text-[#615fff] text-center text-2xl font-semibold mb-2">
+        Login
+      </h2>
 
       <input
         type="email"
@@ -34,16 +36,16 @@ export default function LoginPage() {
           <input type="checkbox" />
           Remember me
         </label>
-        <a href="#" className="text-blue-600 hover:underline">
+        <a href="#" className="text-[#615fff] hover:underline">
           Forgot password?
         </a>
       </div>
 
-      <button className="w-full bg-blue-600 text-white py-2 rounded">
+      <button className="w-full bg-[#615fff] text-white py-2 rounded">
         Login
       </button>
 
-      <Link href="/signup" className="text-blue-600 text-sm text-center block">
+      <Link href="/signup" className="text-[#615fff] text-sm text-center block">
         Don’t have an account? Sign up
       </Link>
     </div>

@@ -5,11 +5,11 @@ export default function AuthLayout({
 }) {
   return (
     <div className="min-h-screen grid grid-cols-1 md:grid-cols-2">
-      <div className="bg-[#0D1B2A] text-white flex flex-col justify-center items-center p-10  rounded-r-full">
-        <h1 className="text-amber-600 text-5xl font-bold">
+      <div className="bg-[#c8d3f7] text-white flex flex-col justify-center items-center p-10  rounded-r-full">
+        <h1 className="text-[#615fff] text-5xl font-bold">
           The Muscular Junction
         </h1>
-        <p className="text-gray-300 text-right w-[75%]">
+        <p className="text-black text-right font-bold">
           Where recovery meets precision
         </p>
       </div>
